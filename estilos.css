@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f8ff;
+    color: #243447;
+}
+header {
+    background-color: #176b87;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #0d4c67;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #f5c6d6;
+    color: #243447;
+    transform: scale(1.08);
+}
+
+
+main {
+    display: flex;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 3;
+}
+
+section {
+    background-color: white;
+    border-left: 7px solid #176b87;
+    border-radius: 8px;
+    padding: 22px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+    display: flex;
+    
+}
+
+section h2 {
+    color: #176b87;
+    margin-top: 0;
+}
+
+section a {
+    display: inline-block;
+    background-color: #176b87;
+    color: white;
+    text-decoration: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+}
+
+section:hover {
+    transform: scale(1.03);
+    background-color: #e6f7ff;
+}
+
+section a:hover {
+    background-color: #f5c6d6;
+    color: #243447;
+}
+
+aside {
+    flex: 1;
+    background-color: #d9edf7;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+aside h2 {
+    color: #0d4c67;
+    border-bottom: 2px solid #176b87;
+    padding-bottom: 8px;
+}
+
+aside h3 {
+    color: #176b87;
+    margin-bottom: 5px;
+}
+
+
+footer {
+    background-color: #0d4c67;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
